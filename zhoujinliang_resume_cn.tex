@@ -10,7 +10,11 @@
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[blue]{classic}                % idem
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
 
 % character encoding
 %\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
@@ -18,7 +22,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
@@ -53,14 +57,15 @@
 \maketitle
 
 \section{学历}
-\cventry{2003.09--2006.03}{硕士}{上海交通大学机械电子专业}{}{\textit{（上海交通大学校优秀毕业生）}}{}  % arguments 3 to 6 can be left empty
+\cventry{2003.09--2006.03}{硕士}{上海交通大学机械电子专业}{}{\textit{上海交通大学校优秀毕业生}}{}  % arguments 3 to 6 can be left empty
 \cventry{1999.09--2003.07}{学士}{上海交通大学机械电子专业}{}{}{}
 
 \section{工作经历}
-\subsection{2006.03--现在}{上海梦擎信息科技有限公司}
+\subsection{上海梦擎信息科技有限公司（2006.03--现在）}
 \cventry{2011.03--现在}{ALP V2}{}{技术经理}{项目负责人}{
 ALP V2是ALP的全新升级系统，类似谷歌地图，基于移动互联网的LBS地图应用平台。并提供WEB及移动平台的SDK，允许第三方接入。 已上线的业务功能含有地图瓦片服务系统、地图瓦片实时渲染系统，POI查询系统、路径演算系统、路况信息系统及鉴权认证系统。
-非业务系统包含使用LVS、Nginx、Varnish的接入层系统，运维相关的日志及监控系统，以及其他队列、缓存、nosql系统。
+非业务系统包含使用LVS、Nginx、Varnish的接入层系统，
+运维相关的日志及监控系统，以及其他队列、缓存、MySql、nosql系统。
 \begin{itemize}%
 \item 负责ALP V2系统的需求分析、架构设计。
 \item 负责研发基于Cetty的全堆栈C++基础网络应用框架（类似Finagle），支持基于protobuf RPC、REST HTTP 等协议。
@@ -126,7 +131,7 @@ Cetty是一个高效、易扩展、易开发、跨平台的C++网络应用开发
 }
 
 \section{科研经历}
-\subsection{2003.03--2006.02}{上海交通大学机器人研究所}
+\subsection{上海交通大学机器人研究所（2003.03--2006.02）}
 \cventry{2005.08--2006.02}{机器人烟草流水线拆箱系统}{}{项目负责人}{}{与ABB公司合作研发，可以有效、快速地自动拆除流水上烟草包装箱的机器人系统。
 \begin{itemize}%
 \item 负责系统的架构设计，负责计算机视觉及控制算法的研究。
@@ -155,8 +160,8 @@ Cetty是一个高效、易扩展、易开发、跨平台的C++网络应用开发
 
 \section{IT技能}
 %\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvline{语言}{\small 精通C++, 熟悉Java}
-\cvline{工具}{\small Linux, boost, poco, gtest, Protobuf, ACE, MySql, Redis, MongoDB, Sphinx, svn, git, Redmine}
+\cvline{语言}{\small 精通C++, 熟悉Java, JavaScript}
+\cvline{工具}{\small Linux, boost, poco, gtest, Protobuf, ACE, MySql, Redis, MongoDB, Memcached, Sphinx, svn, git, Redmine}
 \cvline{其他}{\small UML, OSGI, OOD, SOA, 设计模式, RUP/SCRUM开发模型}
 
 %\section{Interests}

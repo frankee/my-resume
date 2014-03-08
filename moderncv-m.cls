@@ -58,6 +58,18 @@
 \DeclareOption{draft}{\setlength\overfullrule{5pt}}
 \DeclareOption{final}{\setlength\overfullrule{0pt}}
 
+% nolmodern option
+\newif\if@lmodern\@lmoderntrue
+\DeclareOption{nolmodern}{\@lmodernfalse}
+
+% nocolor option
+\newif\if@color\@colortrue
+\DeclareOption{nocolor}{\@colorfalse}
+
+% CJK option
+%\newif\if@CJK\@CJKfalse
+%\DeclareOption{CJK}{\@CJKtrue}
+
 % execute default options
 \ExecuteOptions{a4paper,11pt,final}
 

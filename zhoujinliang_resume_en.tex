@@ -10,15 +10,16 @@
 
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[blue]{classic}                % idem
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}
 
 % character encoding
-%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 \usepackage[noindent]{ctex}
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
@@ -26,7 +27,7 @@
 \firstname{Frankee}
 \familyname{Zhou}
 %\title{Resume title (optional)}               % optional, remove the line if not wanted
-\address{}{Changning District, Shanghai}    % optional, remove the line if not wanted
+\address{}{Xuhui District, Shanghai}    % optional, remove the line if not wanted
 \mobile{139-1838-7639}                    % optional, remove the line if not wanted
 %\phone{phone (optional)}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
@@ -57,11 +58,11 @@
 \cventry{1999.09--2003.07}{Bachelor}{ME of JiaoTong University}{Shanghai}{}{}
 
 \section{Work Experience}
-\subsection{2006.03--now}{Shanghai Astrob Information Technology Co., Ltd.}
+\subsection{Shanghai Astrob Information Technology Co., Ltd. (2006.03--now)}
 \cventry{2011.03--now}{ALP V2}{}{Technical Manager}{Team Leader}{
 ALP V2 is a web map system, like google maps, provide SDK
  of javascript and smart mobile phone, including iphone and Android, and also can connected with REST HTTP api. Subsystem includes Map Tile System, Real-time Tile Rendering system, Poi search/Geocode System, Route System, Traffic System, Auth System,
- the access layer system using LVS, Nginx, Varnish, logging and monitoring system.
+ the access layer system using LVS, Nginx, Varnish, MysSql, Redis, MongoDb, logging and monitoring system.
 \begin{itemize}%
 \item Responsible for the ALP V2 system requirements analysis, architecture design.
 \item Responsible for developing of the full stack C++ network application framework (similar to Finagle), based on the Cetty, supporting protocals including the protobuf-RPC, REST HTTP.
@@ -128,7 +129,7 @@ The Cetty project is a network application framework for easy developing high pe
 }
 
 \section{Research Experience}
-\subsection{2003.03--2006.02}{Robot Research Institute of JiaoTong University}
+\subsection{Robot Research Institute of JiaoTong University (2003.03--2006.02)}
 \cventry{2005.08--2006.02}{The tobacco leaf packages unpacking robot system}{}{Project Leader}{}{The robot, cooperated with ABB, can unpack effectively the tobacco packages.
 \begin{itemize}%
 \item Responsible for the architecture design, and the research of computer vision and control algorithms.
@@ -155,8 +156,8 @@ Participated in the medium-sized autonomous robot soccer of the RoboCup (the Rob
 \cvlanguage{English}{\small CET-6, Fluent in English}{}
 
 \section{Computer skills}
-\cvline{Language}{\small Expert knowledge in C++, familiar with Java}
-\cvline{Tools}{\small Linux, boost, poco, gtest, Protobuf, ACE, MySql, Redis, MongoDB, Sphinx, svn, git, Redmine}
+\cvline{Language}{\small Expert knowledge in C++, familiar with Java, Javascript}
+\cvline{Tools}{\small Linux, boost, poco, gtest, Protobuf, ACE, MySql, Redis, MongoDB, Memcached, Sphinx, svn, git, Redmine}
 \cvline{Others}{\small UML, OSGI, OOD, SOA, Design Pattern, RUP/SCRUM}
 
 %\section{Interests}

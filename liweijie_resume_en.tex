@@ -1,0 +1,121 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[noindent]{ctex}
+\usepackage{wasysym}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Vicky}
+\familyname{Li}
+%\title{Resume title (optional)}               % optional, remove the line if not wanted
+\address{}{Xuhui District, Shanghai}    % optional, remove the line if not wanted
+\mobile{136-7161-8039}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{vici\_99@126.com}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+\extrainfo{09/09/1982 \female} % optional, remove the line if not wanted
+%\photo[64pt]{sjtu}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Enducation}
+\cventry{2005.09--2008.03}{Master}{International Economy and Trade Law of Shanghai Institute of Foreign Trade}{Shanghai}{\textit{an honor of Outstanding Individuals of Shanghai Institute of Foreign Trade}}{}  % arguments 3 to 6 can be left empty
+\cventry{2000.09--2004.07}{Bachelor}{Law of Nanjing Normal University}{Nanjing}{\textit{an honor of Outstanding Graduates of Nanjing Normal University}}{}
+
+\section{Work Experience}
+
+\cventry{2012.09--present}{legal manager}{Allianz China Life Insurance Company Limited}{}{}{
+Work Content:
+\begin{enumerate}%
+\item Drafting and modifying the contract template, reviewing contract, including without limitation of business contract, agency contract, investment contract, lease contract, purchase contract and etc.,
+\item Reviewing product brochures, color pages and etc.,issuing legal opinion on insurance-related inquiry,
+\item Drafting, formulating and modifying company rules relating on the company's contract, seal, litigation and other aspects,
+\item Participate on or assist branch legal for litigation case, the court responding and etc.,
+\item Completing some reports according to the requirements of CIRC, e.g. judicial case report,
+\item Assisting in completing some work as required by the Group or the AP, including without limitation of DD on some company or some person, Anti- Corruption issue reporting, Anti-trust training, data information protection issues and some data in monthly/quarterly/yearly reports,
+\item Keeping, using and changing issues of business license, insurance legal entity certificate and organization code certificate,
+\item Management, use of the company stamp and annual review of the company stamp.
+\end{enumerate}}
+
+\cventry{2008.03--2012.08}{Associate}{Shanghai Fangben Law Office}{}{}{
+Work Content:
+\begin{enumerate}%
+\item To provide standing legal service for a number of FIEs, including without limitation to be responsible for drafting and reviewing internal regulations and rules of FIE and various types of contract, resolving legal advisory of FIEs’ daily operation and HR legal consulting, drafting and servicing lawyer letter and other legal documents, providing third-party business credit status investigation, and resolving labor law issues, and business disputes through litigations,
+\item To assist foreign investor to set up, alter and liquidate its RO, FIE and its branch, including without limitation to be responsible for investigating the market access, resolving legal advisory, drafting application documents, delivering the application documents to relevant authorities and assisting to obtain the approvals and etc.,
+\item To participate in M\&A projects, and be responsible for preliminary legal research, drafting NDA, legal due diligence investigation report and assets/equity transfer agreement,
+\item To participate in listing aboard projects, and be responsible for drafting legal due diligence investigation report and the legal opinions.
+\end{enumerate}}
+
+\section{Languages}
+\cvlanguage{English}{\small CET-6, Fluent in English}{}
+
+\section{Certificates}
+\cvline{certificate}{\small P.R.C. bar}{}
+
+%\section{Interests}
+%\cvline{hobby 1}{\small Description}
+%\cvline{hobby 2}{\small Description}
+%\cvline{hobby 3}{\small Description}
+
+%\section{Extra}
+%\cvlistitem{Open-minded, creativity, responsible, teamwork spirit, good interpersonal skills and leadership.}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
